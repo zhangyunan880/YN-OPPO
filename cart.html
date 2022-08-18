@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>购物车-OPPO商城 </title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/car.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/car.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div>
+                <a href="index.html">OPPO官网</a>
+                <a href="">一加官网</a>
+            </div>
+            <div class="r-header">
+                <a href="">下载OPPO商城App</a><span>|</span>
+                <a href="">用户</a><span>|</span>
+                <a href="">我的订单</a><span>|</span>
+                <a href="">购物车</a><span>|</span>
+                <a href=""></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="nav">
+        <div class="wrap">
+            <div style="line-height: 50px;">
+                <a><img src="image/9c.png" alt=""></a>
+            </div>
+
+            <div class="nav-list">
+                <a href=""> OPPO专区</a>
+                <a href="">OnePlus专区</a>
+                <a href="">realme专区</a>
+                <a href=""> 智能硬件</a>
+                <a href=""> 潮流好物</a>
+                <a href="">服务</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="main-bar">
+            <div>
+                <a>商品信息</a>
+            </div>
+            <div class="r">
+                <a>单价</a>
+                <a>数量</a>
+                <a>操作</a>
+            </div>
+        </div>
+
+
+
+        <!-- 购物车 -->
+        <div class="shop">
+
+            <div class="cart-item-list">
+                <div class="cart-item check-cart-item">
+                    <div class="p-checkbox">
+                        <input type="checkbox" name="" id="" class="j-checkbox">
+                    </div>
+                    <div class="p-goods">
+                        <div class="p-img">
+                            <img src="image/21.png" alt="">
+                        </div>
+                        <div class="p-msg">
+                            FILA 潮流老爹风格系列撞色运动防水石英腕表 47mm FLM38-6105-007 米色</div>
+                    </div>
+                    <div class="p-price">￥1999</div>
+                    <div class="p-num">
+                        <div class="quantity-form">
+                            <a href="javascript:;" class="decrement">-</a>
+                            <input type="text" class="itxt" value="0">
+                            <a href="javascript:;" class="increment">+</a>
+                        </div>
+                    </div>
+                    <div class="p-action"><a href="javascript:;">删除</a></div>
+                </div>
+            </div>
+
+
+
+            <div class="cart-item-list">
+                <div class="cart-item check-cart-item">
+                    <div class="p-checkbox">
+                        <input type="checkbox" name="" id="" class="j-checkbox">
+                    </div>
+                    <div class="p-goods">
+                        <div class="p-img">
+                            <img src="image/ej.png" alt="">
+                        </div>
+                        <div class="p-msg">
+                            OPPO Enco X2 真无线降噪耳机</div>
+                    </div>
+                    <div class="p-price">￥1999</div>
+                    <div class="p-num">
+                        <div class="quantity-form">
+                            <a href="javascript:;" class="decrement">-</a>
+                            <input type="text" class="itxt" value="0">
+                            <a href="javascript:;" class="increment">+</a>
+                        </div>
+                    </div>
+                    <div class="p-action"><a href="javascript:;">删除</a></div>
+                </div>
+            </div>
+
+
+            <!-- 结算 -->
+            <div class="cart-item-list">
+                <div class="cart-floatbar">
+                    <div class="select-all">
+                        <input type="checkbox" name="" id="" class="checkall">全选
+                    </div>
+
+                    <div class="toolbar-right">
+                        <div class="price-sum">总价:￥0</div>
+                        <div class="btn-area">去结算</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="money">
+                <div class="img-box">
+                    <img src="image/money.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).on('click', function () {
+                $('.money').slideUp(1500)
+            })
+            $('.btn-area').on('click', function (e) {
+                e.stopPropagation()
+            })
+
+            $('.btn-area').on('click', function () {
+                $('.money').slideDown(1500)
+                setInterval(() => {
+                    window.location.href = "./login.html"
+                }, 800)
+
+            })
+
+        </script>
+</body>
+
+</html>

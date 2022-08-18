@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 36px;
+    background-color: black;
+}
+
+.container {
+    width: 1264px;
+    height: 34px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+
+.header a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-size: 12px;
+    margin: 0px 20px;
+    line-height: 34px;
+}
+
+.header span {
+    color: white;
+    line-height: 34px;
+}
+
+
+.wrap {
+    width: 1264px;
+    display: flex;
+    margin: auto;
+
+}
+
+
+
+.nav {
+    height: 84px;
+    background-color: white;
+    border-bottom: 1px solid #d2d0d0;
+
+}
+
+.nav img {
+    width: 238px;
+    height: 50px;
+    margin: 17px;
+
+}
+
+.nav a {
+    line-height: 84px;
+}
+
+.nav-list {
+    width: 810px;
+    display: flex;
+    overflow-y: auto;
+    justify-content: space-around;
+
+    padding-left: 30px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    outline: none;
+    color: #9f9f9f;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.main-bar {
+
+    width: 1248px;
+    height: 64px;
+    margin: auto;
+ 
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    line-height: 64px;
+    margin-right: 110px;
+}
+
+
+.main-bar a {
+    margin: 0px 20px;
+    color: rgb(104, 101, 101);
+}
+
+.r a {
+    margin: 0 105px;
+
+}
+
+.shop {
+    width: 1264px;
+    margin: auto;
+    height: 100px;
+  
+}
+
+
+a{
+    text-decoration: none;
+        outline: none;
+      color:   #b5acac;
+}
+
+
+.cart-thead>div,
+.cart-item>div {
+    float: left;
+}
+
+.t-checkbox,
+.p-checkbox {
+    height: 18px;
+    line-height: 18px;
+    padding-top: 7px;
+    width: 122px;
+    padding-left: 11px;
+}
+
+
+
+.cart-item {
+    height: 160px;
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    border-color: #e1e0e0;
+    background: #fff;
+    padding-top: 14px;
+    margin: 15px 0;
+}
+
+
+
+.p-checkbox {
+    width: 50px;
+    line-height: 120px;
+  
+}
+.p-checkbox input{
+    width: 20px;
+    height: 20px;
+}
+
+.p-goods {
+    margin-top: 8px;
+    width: 565px;
+   ;
+}
+
+.p-img {
+    float: left;
+ 
+    padding: 5px;
+   
+}
+.p-img img{
+    width: 100px;
+    height: 100px;
+}
+
+.p-msg {
+    float: left;
+    width: 210px;
+    margin: 20px 10px;
+}
+
+.p-price {
+    width: 110px;
+    margin-left: 8px;
+    line-height: 144px;
+    color: red;
+    font-size: 18px;
+}
+.p-action{
+    margin-left: 95px;
+    line-height: 144px;
+}
+
+
+
+.p-num {
+    width: 170px;
+    margin-left: 135px;
+    margin-top: 65px;
+}
+
+.decrement,
+.increment {
+    float: left;
+    border: 1px solid #cacbcb;
+    height: 18px;
+    line-height: 18px;
+    padding: 1px 0;
+    width: 16px;
+    text-align: center;
+    color: #666;
+    margin: 0;
+    background: #fff;
+    margin-left: -1px;
+}
+
+.itxt {
+    float: left;
+    border: 1px solid #cacbcb;
+    width: 42px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    margin-left: -1px;
+    font-size: 12px;
+    font-family: verdana;
+    color: #333;
+    -webkit-appearance: none;
+}
+
+.p-sum {
+    font-weight: 700;
+    width: 145px;
+}
+
+
+/* 结算模块 */
+
+.cart-floatbar {
+    height: 50px;
+    /* border: 1px solid #f0f0f0; */
+    background: #fff;
+    position: relative;
+    margin-bottom: 50px;
+    line-height: 50px;
+}
+
+.select-all {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding: 16px 0 16px 9px;
+    white-space: nowrap;
+}
+
+.select-all input {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+.toolbar-right {
+    float: right;
+}
+
+
+.price-sum {
+    float: left;
+    margin: 0 15px;
+    font-size: 25px;
+    color: #f34141;
+}
+
+
+
+.btn-area {
+    /* font-weight: 700; */
+    width: 94px;
+    height: 52px;
+    line-height: 52px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    background: #e54346;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.money {
+    position: absolute;
+    top: 218px;
+    left: 39%;
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 0px 0px 20px #ddd;
+    display: none;
+
+}
+
+.money img {
+
+    width: 250px;
+    height: 250px;
+
+}
+
+.img-box {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+
+}

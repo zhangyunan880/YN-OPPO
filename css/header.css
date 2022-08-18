@@ -1,0 +1,146 @@
+.nav {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 3px 3px 0 #CCC;
+    background: #FFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
+    transition: 0.3s
+}
+
+.nav.index {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.05);
+}
+
+.nav.scroll {
+    background: #FFF;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
+    transition: 0.3s
+}
+
+.nav .layui-container {
+    position: relative;
+    transition: all 400ms ease-out;
+}
+
+.nav .nav-logo {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    line-height: 80px;
+}
+
+.nav .nav-logo img {
+    width: 96px;
+    height: 23px;
+}
+
+.nav .nav-list {
+    display: inline-block;
+    height: 80px;
+}
+
+.nav .nav-list button {
+    width: 25px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav .nav-list button span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #2db5a3;
+    margin-bottom: 6px;
+    transition: 0.5s;
+}
+
+.nav .nav-list button span.spa1 {
+    transform: rotate(45deg);
+}
+
+.nav .nav-list button span.spa3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav .layui-nav {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    color: #000;
+    background: transparent;
+}
+
+.nav .layui-nav .layui-nav-item {
+    display: block;
+    line-height: 60px;
+}
+
+.nav .layui-nav * {
+    font-size: 18px;
+}
+
+.nav .layui-nav .layui-nav-item a {
+    padding: 0 0;
+    color: #000;
+}
+
+.nav .layui-nav-bar,
+.nav .layui-nav .layui-this:after {
+    height: 2px;
+    background-color: #2db5a3;
+}
+
+.nav .layui-nav .layui-this a,
+.nav .layui-nav .layui-nav-item a:hover {
+    color: #2db5a3;
+}
+
+@media screen and (min-width: 1312px) {
+    .nav {
+        max-height: 80px;
+    }
+
+    .nav.index {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .nav .nav-list button {
+        display: none;
+    }
+
+    .nav .layui-nav {
+        /* width: auto;
+        position: absolute;
+        top: 0;
+        padding: 0 5px;
+        border-radius: 0;
+        margin: 0; */
+
+    /* width: auto; */
+    position: absolute;
+    top: 0;
+    left: 155px;
+    padding: 0px 9px;
+    border-radius: 0;
+    margin: 0;
+    }
+
+    .nav .layui-nav .layui-nav-item {
+        display: inline-block;
+        margin: 0 45px;
+        line-height: 80px;
+    }
+}
